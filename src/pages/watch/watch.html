@@ -1,0 +1,39 @@
+<!--
+  Generated template for the WatchPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>What Genre of movie do you want to watch next!</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-list radio-group [(ngModel)]="watchNext"><!--Saves the users choice so it can output in the main page-->
+       <ion-item>
+            <ion-label>Horror <ion-icon name="cloudy-night"></ion-icon></ion-label>
+            <ion-radio value="Horror"></ion-radio><!--user radio buttons choices and an ionic icon-->
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Sport <ion-icon name="american-football"></ion-icon></ion-label>
+            <ion-radio value="Sport"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Romantic <ion-icon name="heart"></ion-icon></ion-label>
+            <ion-radio value="Romantic"></ion-radio>
+        </ion-item>
+
+        <ion-item>
+            <ion-label>Comedy <ion-icon name="happy"></ion-icon></ion-label>
+            <ion-radio value="Comedy"></ion-radio>
+        </ion-item>
+  </ion-list>
+  <button ion-button (click)="saveMovie()">Save</button>
+</ion-content>

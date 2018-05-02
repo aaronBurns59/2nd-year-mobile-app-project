@@ -1,0 +1,28 @@
+<!--
+  Generated template for the MoviePage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>Movies to Watch</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+  <h2>Hello World</h2>
+  
+     <ion-list> 
+       <ion-item *ngFor="let m of movies">   
+          <h2>{{m.Title}}</h2>
+          <ion-img width="150" height="200" src="{{m.Poster}}"></ion-img>
+          <p>{{m.Year}}</p>
+          <p>{{m.Rated}}</p>
+          <p>{{m.Genre}}</p>
+          <p>{{m.Runtime}}</p>
+       </ion-item>
+    </ion-list>
+</ion-content>

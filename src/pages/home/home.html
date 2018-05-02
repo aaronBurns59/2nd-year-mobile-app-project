@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Super Screen Cinema
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+<h2>
+  Check out the movies we have on offer.
+</h2>
+
+<h3>The genre of movie did you want to watch next: {{watchNext}}</h3>
+<button ion-button (click)="openWatch()">Change Genre</button>
+
+<br><ion-img width="300" height="200" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"></ion-img>
+<br><p>Better hurry and book a ticket now</p>
+<button ion-button (click)="openMovies()">Movies</button>
+        
+</ion-content>
+
