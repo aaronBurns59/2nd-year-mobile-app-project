@@ -11,12 +11,12 @@
   Check out the movies we have on offer.
 </h2>
 
-<h3>The genre of movie did you want to watch next: {{watchNext}}</h3>
+<h3>The genre of movie did you want to watch next: {{watchNext}}</h3><!--The value of watchNext is saved on reloading thanks to data binding-->
 <button ion-button (click)="openWatch()">Change Genre</button>
-
+<!--ion img tagsa allow me to have an image or gif in this case directly from the web-->
 <br><ion-img width="300" height="200" src="https://upload.wikimedia.org/wikipedia/commons/d/dd/Muybridge_race_horse_animated.gif"></ion-img>
 <br><p>Better hurry and book a ticket now</p>
-<button ion-button (click)="openMovies()">Movies</button>
-        
+<button ion-button (click)="openMovies()">Movies</button><button ion-button (click)="openTicket()">Tickets</button><!--ion-button look much better than regular html buttons-->
+<!--Also this button contains a method that opens the movies page-->
 </ion-content>
 

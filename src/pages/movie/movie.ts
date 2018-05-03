@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { MoviesProvider } from '../../providers/movies/movies';
+import { MoviesProvider } from '../../providers/movies/movies';//this page needs a method from the provider so it needs to be imported
 
 @Component({
   selector: 'page-movie',
@@ -7,12 +7,14 @@ import { MoviesProvider } from '../../providers/movies/movies';
 })
 export class MoviePage {
 
-movies: any[]=[];
-  constructor(private mp: MoviesProvider) {}//constructor
+  movies: any; //declare variable movies of type any (for objects)
 
-  ionViewDidLoad()
-  {
-   this.mp.getMovies().subscribe(data=> {this.movies = data.Search});
-  }//getMovies
+  constructor(private mp: MoviesProvider) { }//constructor
+
+  ionViewWillEnter() {
+    this.mp.getMovies().subscribe(data => { 
+      console.log(data) //when this page is loaded this method calls the getMovies method from the movies provider
+      this.movies = data}); 
+  }//getMovies                                                          Data from online api is then saved into the movies array
 
 }

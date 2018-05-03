@@ -12,17 +12,17 @@
 </ion-header>
 
 
-<ion-content padding>
-  <h2>Hello World</h2>
-  
+<ion-content padding> 
      <ion-list> 
-       <ion-item *ngFor="let m of movies">   
-          <h2>{{m.Title}}</h2>
-          <ion-img width="150" height="200" src="{{m.Poster}}"></ion-img>
-          <p>{{m.Year}}</p>
-          <p>{{m.Rated}}</p>
-          <p>{{m.Genre}}</p>
-          <p>{{m.Runtime}}</p>
+       <!--This loop only calls values from the api objects that match what is entered below-->
+       <ion-item *ngIf="movies">   <!--Ionic for lop -->
+          <h2>{{movies.Title}}</h2>
+          <ion-img width="150" height="200" src="{{movies.Poster}}"></ion-img>
+          <p>{{movies.Year}}</p>
+          <p>{{movies.Rated}}</p>
+          <p>{{movies.Genre}}</p>
+          <p>{{movies.Runtime}}</p>
+          <!--The movie title, poster, year released, rating, genre and runtime-->
        </ion-item>
     </ion-list>
 </ion-content>

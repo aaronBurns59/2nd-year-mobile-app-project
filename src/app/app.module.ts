@@ -11,6 +11,7 @@ import { MoviePage } from '../pages/movie/movie';
 import { WatchPage } from '../pages/watch/watch';
 import { MoviesProvider } from '../providers/movies/movies';
 import { IonicStorageModule } from '@ionic/storage';
+import { TicketPage } from '../pages/ticket/ticket';
 
 
 @NgModule({
@@ -18,7 +19,8 @@ import { IonicStorageModule } from '@ionic/storage';
     MyApp,
     HomePage,
     MoviePage,
-    WatchPage
+    WatchPage,
+    TicketPage
   ],
   imports: [
     BrowserModule,
@@ -31,7 +33,8 @@ import { IonicStorageModule } from '@ionic/storage';
     MyApp,
     HomePage,
     MoviePage,
-    WatchPage
+    WatchPage,
+    TicketPage
   ],
   providers: [
     StatusBar,

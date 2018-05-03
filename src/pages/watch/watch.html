@@ -16,7 +16,7 @@
 <ion-content padding>
   <ion-list radio-group [(ngModel)]="watchNext"><!--Saves the users choice so it can output in the main page-->
        <ion-item>
-            <ion-label>Horror <ion-icon name="cloudy-night"></ion-icon></ion-label>
+            <ion-label>Horror <ion-icon name="cloudy-night"></ion-icon></ion-label><!--ion labels are used for decoration of page-->
             <ion-radio value="Horror"></ion-radio><!--user radio buttons choices and an ionic icon-->
         </ion-item>
 
@@ -35,5 +35,5 @@
             <ion-radio value="Comedy"></ion-radio>
         </ion-item>
   </ion-list>
-  <button ion-button (click)="saveMovie()">Save</button>
+  <button ion-button (click)="saveMovie()">Save</button><!--When the save button is clicked the choice you made on this page will save it on both pages-->
 </ion-content>
