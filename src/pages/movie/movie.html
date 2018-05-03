@@ -14,8 +14,7 @@
 
 <ion-content padding> 
      <ion-list> 
-       <!--This loop only calls values from the api objects that match what is entered below-->
-       <ion-item *ngIf="movies">   <!--Ionic for lop -->
+       <ion-item *ngIf="movies">   <!--Ionic if lop -->
           <h2>{{movies.Title}}</h2>
           <ion-img width="150" height="200" src="{{movies.Poster}}"></ion-img>
           <p>{{movies.Year}}</p>
